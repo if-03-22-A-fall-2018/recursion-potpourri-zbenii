@@ -3,7 +3,7 @@ CCLINK			= g++
 LIBS				=
 CCOPTIONS		= -Wall -pedantic -g
 LDOPTIONS		=
-HDRS				= recfuncs.h test_recpot.h shortcut.h memcheck.h
+HDRS				= recfuncs.h test_recpot.h shortcut.h
 
 TEST = test_recpot
 #PROGRAM = depot_prg
