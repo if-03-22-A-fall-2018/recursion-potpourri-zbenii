@@ -3,6 +3,7 @@
 #include "test_recpot.h"
 #include "shortcut.h"
 #include "recfuncs.h"
+#include <stdint.h>
 
 bool array_contains(int arr[], int arr_size, int number);
 
@@ -37,7 +38,7 @@ TEST(factorial_calculation)
     int nums[] = {0, 1, 3, 4, 6, 7, 9};
     int facs[] = {1, 1, 6, 24, 720, 5040, 362880};
 
-    for (uint i = 0; i < sizeof(nums)/sizeof(nums[0]); i++){
+    for (unsigned int i = 0; i < sizeof(nums)/sizeof(nums[0]); i++){
         ASSERT_EQUALS(facs[i], calc_factorial(nums[i]));
     }
 }
